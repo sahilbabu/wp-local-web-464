@@ -148,7 +148,7 @@
                             <a href="<?php echo esc_url(home_url('/')); ?>">
                                 <?php $logo = of_get_option('logo_uploader'); ?>
                                 <?php if (!empty($logo)): ?>   
-                                <img src="<?php echo esc_attr($logo); ?>" alt="<?php bloginfo('description'); ?>" id="theme_logo_img" width="250"  height="70"/>
+                                    <img src="<?php echo esc_attr($logo); ?>" alt="<?php bloginfo('description'); ?>" id="theme_logo_img" width="250"  height="70"/>
                                 <?php else: ?>
                                     <img src="<?php echo esc_attr(get_template_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('description'); ?>" id="theme_logo_img" />
                                 <?php endif; ?>

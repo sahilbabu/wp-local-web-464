@@ -44,23 +44,28 @@
                                     //get all post categories
                                     $categories = get_the_category(get_the_ID());
                                     ?>
-                                    <div class="feature-two-column medium-two-columns <?php if (!of_get_option('disable_css_animation') == 1) {
+                                    <div class="feature-two-column medium-two-columns <?php
+                                    if (!of_get_option('disable_css_animation') == 1) {
                                         echo esc_attr("appear_animation");
-                                    } ?> <?php if ($row_count % 2) {
+                                    }
+                                    ?> <?php
+                                    if ($row_count % 2) {
                                         echo esc_attr("left_post_align ");
                                     } else {
                                         echo esc_attr("right_post_align ");
-                                    } ?>">
+                                    }
+                                    ?>">
                                         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                             <div class="image_post feature-item">
                                                 <a  href="<?php the_permalink(); ?>" class="feature-link" title="<?php the_title_attribute(); ?>">              
-                                                <?php if (has_post_thumbnail()) {
-                                                    the_post_thumbnail('medium-feature');
-                                                } else {
-                                                    echo '<img class="no_feature_img" alt="" src="' . get_template_directory_uri() . '/img/feature_img/medium-feature.jpg' . '">';
-                                                }
-                                                ?>
-                                                <?php echo jelly_post_type(); ?>
+                                                    <?php
+                                                    if (has_post_thumbnail()) {
+                                                        the_post_thumbnail('medium-feature');
+                                                    } else {
+                                                        echo '<img class="no_feature_img" alt="" src="' . get_template_directory_uri() . '/img/feature_img/medium-feature.jpg' . '">';
+                                                    }
+                                                    ?>
+                                                    <?php echo jelly_post_type(); ?>
                                                 </a>
                                                 <?php echo jelly_total_score_post_front_small_circle(get_the_ID()); ?> 		                         
                                             </div>
@@ -79,50 +84,52 @@
                                                     }
                                                 }
                                                 ?>
-                                    <?php echo jelly_post_like_meta(get_the_ID()); ?>
+                                                <?php echo jelly_post_like_meta(get_the_ID()); ?>
                                             </div>
                                             <h3 class="image-post-title feature_2col"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>      
-                                    <?php echo jelly_post_meta(get_the_ID()); ?>
+                                            <?php echo jelly_post_meta(get_the_ID()); ?>
                                             <p><?php echo jelly_post_list_excerpt(get_the_excerpt('')); ?> </p>
-                                    <?php echo jelly_post_meta_footer(get_the_ID()); ?>
+                                            <?php echo jelly_post_meta_footer(get_the_ID()); ?>
                                         </div>
                                     </div>
 
-                            <?php if ($row_count % 2) {
-                                
-                            } else {
-                                echo '<div class="clearfix"></div>';
-                            } ?>    
+                                    <?php
+                                    if ($row_count % 2) {
+                                        
+                                    } else {
+                                        echo '<div class="clearfix"></div>';
+                                    }
+                                    ?>    
 
-    <?php } ?>
-            <?php } else { ?>       
-                <?php
-                if (is_search()) {
-                    _e('No result found', 'jelly_text_main');
-                }
-                ?>                   
-            <?php } ?>
+                                <?php } ?>
+                            <?php } else { ?>       
+                                <?php
+                                if (is_search()) {
+                                    _e('No result found', 'jelly_text_main');
+                                }
+                                ?>                   
+                            <?php } ?>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>
-<?php jelly_pagination(); ?>  
+                    <?php jelly_pagination(); ?>  
 
 
                 </div></div>
 
 
             <!-- Start sidebar -->
-<?php
-if (have_posts()) : while (have_posts()) : the_post();
-        $GLOBALS['sbg_sidebar'] = get_post_meta(get_the_ID(), 'sbg_selected_sidebar_replacement', true);
-    endwhile;
-endif;
-?>
+            <?php
+            if (have_posts()) : while (have_posts()) : the_post();
+                    $GLOBALS['sbg_sidebar'] = get_post_meta(get_the_ID(), 'sbg_selected_sidebar_replacement', true);
+                endwhile;
+            endif;
+            ?>
 
 
             <!-- Start sidebar -->
-<?php echo jelly_other_sidebar_general_show(); ?>  
+            <?php echo jelly_other_sidebar_general_show(); ?>  
             <!-- End sidebar -->
 
             <div class="clearfix"></div>

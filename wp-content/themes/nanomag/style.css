@@ -3068,7 +3068,7 @@ margin-top: 30px;
 /*  Appear animation
 /*-----------------------------------------------------------------------------------*/
 .appear_animation {
-    opacity: 0;
+/*    opacity: 0;*/
     filter: alpha(opacity=100);
 }
 
@@ -3113,7 +3113,7 @@ margin-top: 30px;
 }
 
 .animate_css_stlye {
-    opacity: 0;
+/*    opacity: 0;*/
     filter: alpha(opacity=100);
 }
 
