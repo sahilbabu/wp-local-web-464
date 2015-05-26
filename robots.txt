@@ -1,0 +1,18 @@
+User-agent: *
+#Crawl-delay: 10
+# Directories
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /downloads/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+# Files
+Disallow: /wp-cron.php
+Disallow: /wp-login.php
+Disallow: /wp-signup.php
+Disallow: /timthumb.php
+# Paths (clean URLs)
+Disallow: /wp-admin/
+# Paths (no clean URLs)
+#Disallow: /?q=admin/
+Sitemap: http://www.imgneed.com/sitemapindex.xml

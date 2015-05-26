@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^static\.imgneed\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.static\.imgneed\.com$
+RewriteRule ^/?$ "http\:\/\/www\.imgneed\.com\/" [R=301,L]
+

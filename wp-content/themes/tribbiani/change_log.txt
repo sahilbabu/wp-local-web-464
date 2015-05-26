@@ -1,0 +1,36 @@
+Version 1.0.1
+
+	i) Initial Release
+	
+Version 1.0.2
+
+	i) Removed Unused Menus from the theme.	
+	
+Version 1.1 
+
+	i) Added Support for Dropdown Menus
+	ii) Fixed some bugs in options panel.	
+	
+	
+Version 1.1.1 
+
+	i) Fixed an issue which caused theme to be initialized whith white background instead of black.	
+	
+Version 1.1.2  
+
+	i) Fixed Fast moving slides
+	ii) Title of RSS icon
+	iii) Added Instagram and Flickr Icons
+	iv) Minor Bug Fixes
+	v) Enhanced Readibility issues. Changed link colors.	
+	
+Version 1.1.3
+
+	i) Fixed a Major Bug with Nivo Slider, which caused some animations to now work.
+	ii) Adjusted the Size of Social Icons to make them more decent
+	iii) Other Minor Fixes.	
+	
+Version 1.1.3.1
+
+	i) Fixed Screenshot. Now using 100% GPL Images.
+	ii) Minor bug fix.(Prefixed a theme hook)	
