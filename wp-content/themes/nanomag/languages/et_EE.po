@@ -1,0 +1,456 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nanomag\n"
+"POT-Creation-Date: 2015-01-29 16:48+0700\n"
+"PO-Revision-Date: 2015-02-21 13:21+0700\n"
+"Last-Translator: Themeloy <themeloy@gmail.com>\n"
+"Language-Team: Jellywp <jellywp@gmail.com>\n"
+"Language: et_EE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../archive.php:63 ../loop.php:84
+msgid "No result found"
+msgstr "Tulemusi ei leitud"
+
+#: ../functions.php:359 ../functions.php:369
+msgid "<i class=\"fa fa-comments\"></i>0"
+msgstr ""
+
+#: ../functions.php:359 ../functions.php:369
+msgid "<i class=\"fa fa-comments\"></i> 1"
+msgstr ""
+
+#: ../functions.php:359 ../functions.php:369
+msgid "<i class=\"fa fa-comments\"></i>%"
+msgstr ""
+
+#: ../functions.php:385
+msgid "Read more"
+msgstr "Loe edasi"
+
+#: ../functions.php:386
+msgid "<i class=\"fa fa-comments\"></i>0 Comment"
+msgstr ""
+
+#: ../functions.php:386
+msgid "<i class=\"fa fa-comments\"></i>1 Comment"
+msgstr ""
+
+#: ../functions.php:386
+msgid "<i class=\"fa fa-comments\"></i>% Comment"
+msgstr ""
+
+#: ../functions.php:395
+msgid "Home"
+msgstr "Avaleht"
+
+#: ../functions.php:624
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:651
+msgid "Your comment is awaiting moderation."
+msgstr "Teie kommentaar ootab Administraatori kinnitust"
+
+#: ../header.php:85
+msgid "Instagram"
+msgstr ""
+
+#: ../inc/addon/Tax-meta-class/Tax-meta-class.php:250
+msgid "Delete this image"
+msgstr "Kustuta see pilt"
+
+#: ../inc/addon/Tax-meta-class/Tax-meta-class.php:250
+msgid "Delete"
+msgstr "Kustuta"
+
+#: ../inc/addon/Tax-meta-class/Tax-meta-class.php:582
+msgid "Remove"
+msgstr "Eemalda"
+
+#: ../inc/addon/Tax-meta-class/Tax-meta-class.php:595
+msgid "Add"
+msgstr "Lisa"
+
+#: ../inc/addon/aqua-page-builder-master/blocks/aq-clear-block.php:43
+msgid ""
+"Use this block to clear the floats between two or more separate blocks "
+"vertically."
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/blocks/aq-column-block.php:43
+#: ../inc/addon/aqua-page-builder-master/blocks/aq-column-block.php:64
+msgid "Drag block items into this column box"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/classes/class-aq-block.php:36
+msgid ""
+"function AQ_Block::block should not be accessed directly. Output generated "
+"by the "
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/classes/class-aq-block.php:57
+msgid "There are no options for this block."
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/classes/class-aq-block.php:136
+msgid "Edit Block"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/classes/class-aq-block.php:149
+msgid "Close"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/classes/class-aq-page-builder.php:711
+msgid "Please select your template first!"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/view/view-builder-page.php:19
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/view/view-builder-page.php:155
+msgid "Select a template to edit:"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/view/view-builder-page.php:179
+msgid "or"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/view/view-builder-page.php:192
+msgid "Create a new template"
+msgstr ""
+
+#: ../inc/addon/aqua-page-builder-master/view/view-builder-page.php:199
+msgid "Create your new template below"
+msgstr ""
+
+#: ../inc/addon/menu_option.php:38
+msgid "Use widget Menu"
+msgstr ""
+
+#: ../inc/addon/menu_option.php:44
+msgid "Display Widget Area"
+msgstr ""
+
+#: ../inc/addon/meta-box/inc/fields/file.php:19
+#, php-format
+msgid "You may only upload maximum %d file"
+msgstr ""
+
+#: ../inc/addon/meta-box/inc/fields/file.php:20
+#, php-format
+msgid "You may only upload maximum %d files"
+msgstr ""
+
+#: ../inc/addon/meta-box/inc/fields/file.php:70
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: ../inc/addon/meta-box/inc/fields/image-advanced.php:22
+msgid "Select Images"
+msgstr ""
+
+#: ../inc/addon/meta-box/inc/fields/oembed.php:54
+msgid "Embed HTML not available."
+msgstr ""
+
+#: ../inc/addon/meta-box/inc/fields/taxonomy.php:40
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+#: ../inc/addon/meta-box/option/meta_option.php:243
+msgid "Review Score 5"
+msgstr ""
+
+#: ../inc/addon/post-like.php:345
+msgid "This Week's Most Popular Posts"
+msgstr ""
+
+#: ../inc/addon/sidebar_generator.php:176
+#: ../inc/addon/sidebar_generator.php:199
+msgid "Custom Sidebars"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:161
+#: ../inc/addon/tgm-plugin-activation/required_plugins.php:69
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:162
+#: ../inc/addon/tgm-plugin-activation/required_plugins.php:70
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:163
+#: ../inc/addon/tgm-plugin-activation/required_plugins.php:71
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:175
+#: ../inc/addon/tgm-plugin-activation/required_plugins.php:83
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:177
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1939
+#: ../inc/addon/tgm-plugin-activation/required_plugins.php:84
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:531
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2156
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1166
+msgid "Private Repository"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1169
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1174
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1177
+msgid "Required"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1177
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1180
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1182
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1287
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1395
+msgid "Install"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1309
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1396
+msgid "Activate"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1358
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1374
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1375
+msgid "Source"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1376
+msgid "Type"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1377
+msgid "Status"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1922
+msgid "Install package not available."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1923
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1924
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1925
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1926
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1927
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:1938
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2052
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2053
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2053
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2062
+msgid "Show Details"
+msgstr "Näita detaile"
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2053
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2062
+msgid "Hide Details"
+msgstr "Peida detaile"
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2054
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2055
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2059
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2060
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2061
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2062
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2063
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/class-tgm-plugin-activation.php:2064
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/required_plugins.php:72
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/addon/tgm-plugin-activation/required_plugins.php:85
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Kõik pluginad on paigaldatud ja aktiveeritud edukalt. %s"
+
+#: ../inc/new_builder/home_large_main_post_below_list.php:128
+#: ../inc/new_builder/home_list_medium.php:132
+#: ../inc/new_builder/home_main_post_below_list.php:130
+msgid "Read More"
+msgstr "Loe edasi"
+
+#: ../inc/option/options-framework.php:270
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Klõpsake OK, et taastada. Iga teema seaded lähevad kaduma!"
+
+#: ../inc/options.php:1612
+msgid "Footer 3 columns"
+msgstr "Footer 3 veergu"
+
+#: ../inc/options.php:1613
+msgid "Footer 2 columns"
+msgstr "Footer 2 veergu"
+
+#: ../inc/options.php:1614
+msgid "Footer 1 columns"
+msgstr "Footer 1 sambad"
+
+#: ../inc/options.php:1615
+msgid "No Footer"
+msgstr "No jalus"
+
+#: ../inc/widget/ads160x600.php:58 ../inc/widget/ads728x90.php:58
+msgid "ADS 728"
+msgstr "ADS 728"
+
+#: ../inc/widget/ads300x250.php:69
+msgid "ADS 300x250"
+msgstr ""
+
+#: ../inc/widget/subscribe_box.php:38
+msgid "Your Email"
+msgstr "Teie Email"
+
+#: ../inc/widget/subscribe_box.php:70
+msgid "Email Subscribe"
+msgstr "Telli Emailile"
+
+#: ../inc/widget/tab.php:63
+msgid "Recent"
+msgstr "Hiljutine"
+
+#: ../sitemap.php:17
+msgid "Pages"
+msgstr "Lehed"
+
+#: ../sitemap.php:25
+msgid "Categories"
+msgstr "Kategooriad"
+
+#: ../sitemap.php:33
+msgid "Tags"
+msgstr "silt"
+
+#: ../sitemap.php:49
+msgid "Authors"
+msgstr "Autorid"

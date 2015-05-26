@@ -1,0 +1,128 @@
+/* Product of Orbisius.com. Visit http://club.orbisius.com/ */
+.floating_social_button .app-hide {
+    display: none;
+}
+
+.floating_social_button .app-hide-force {
+    display: none !important;
+}
+
+.floating_social_button .app-form-field-error {
+    border-color: red;
+}
+
+.floating_social_button .app-serious-notice {
+    color: red;
+    font-weight: bold;
+}
+
+/* Common */
+.floating_social_button .app-alert-error {
+    background: #D54E21;
+    border: 1px solid #eee;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+
+.floating_social_button .app-alert-success {
+    background: green;
+    border: 1px solid #eee;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+
+.floating_social_button .app-alert-success a, .floating_social_button .app-alert-error a {
+    color: white;
+}
+
+.floating_social_button .app-alert-notice {
+    background: #FFEC8B;
+    border: 1px solid #eee;
+    padding: 3px;
+    text-align: center;
+}
+
+.floating_social_button .app-button-positive {
+    background: green;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.floating_social_button .app-button-negative {
+    background: red;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.floating_social_button .highlight {
+    background: #FFFF33;
+}
+
+/* dlg button colouring */
+.floating_social_button .app-dialog-button-ok {
+    background: green !important;
+    color: white !important;
+}
+
+.floating_social_button .app-dialog-button-cancel {
+    background: red !important;
+    color: white !important;
+}
+
+.floating_social_button .app-button-left, .app-align-left{
+    float: left;
+}
+
+.floating_social_button .app-button-right, .floating_social_button .app-align-right {
+    float: right;
+}
+
+.floating_social_button .app-button-container {
+    padding:10px;
+    background: #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.floating_social_button .available-theme {
+    padding:10px;
+    border: 2px solid white; /* we need this because there is a shift otherwise on hover. */
+}
+
+.floating_social_button .available-theme:hover {
+    border: 2px solid #444;
+    background: #ccc;
+}
+
+.floating_social_button .saving_action {
+    background: #ccc;
+}
+
+/* Theme Editor */
+.floating_social_button_container .highlight {
+    background: #FFFF33;
+}
+
+.floating_social_button_container .app-dialog-button-ok {
+    background: green !important;
+    color: white !important;
+}
+
+.floating_social_button_container .app-dialog-button-cancel {
+    background: red !important;
+    color: white !important;
+}
+
+/* The dropdowns move to a new line when files are longer */
+.floating_social_button_container #theme_1, .floating_social_button_container #theme_2, 
+	.floating_social_button_container #theme_1_file, .floating_social_button_container #theme_2_file {
+	max-width:40%;
+}
+
+.floating_social_button_container .primary_buttons {
+    margin-top:5px;
+}
