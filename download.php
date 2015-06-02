@@ -1,16 +1,21 @@
 <?php
-
+error_reporting(0);
 //ini_set('gd.jpeg_ignore_warning', true);
 require_once( dirname(__FILE__) . '/wp-load.php' );
+$blogurl = get_bloginfo('url');
 // place this code inside a php file and call it f.e. "download.php"
 $file = $_GET['file'];
 if (!$file) {
-    return false;
+    header("Location: $blogurl");
 }
-
+$allowed_ext = array ('gif','png','jpeg','jpg');
+$file_split = explode('.', base64_decode($file));
+$ext = end($file_split);
+if(!in_array($ext, $allowed_ext)){
+    header("Location: $blogurl");
+}
 $imageString = file_get_contents(base64_decode($file));
 $doc_path = $_SERVER['DOCUMENT_ROOT'] . "/downloads/";
-$ext = end(explode('.', base64_decode($file)));
 $imag_new_name = 'temp_dwn_file.'.$ext;
 $save = file_put_contents($doc_path.$imag_new_name ,$imageString);
 

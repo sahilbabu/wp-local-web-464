@@ -4,7 +4,7 @@
   <div class="content_wraper three_columns_container full_post_or_page">
 <!-- begin content -->         
   <div class="twelve columns page_error_404">
-                    <h1 class="big">W-P-L-O-C-K-E-R-.-C-O-M<?php esc_attr_e('404', 'jelly_text_main'); ?></h1>
+                    <h1 class="big"><?php esc_attr_e('404', 'jelly_text_main'); ?></h1>
                     <p class="description">  
                     <?php esc_attr_e('OOOOOPS!! The page you are looking for doesnt exist!', 'jelly_text_main'); ?></p>
       </div>
