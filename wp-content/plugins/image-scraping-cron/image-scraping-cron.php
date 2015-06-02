@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name: Image scraping cron 
  * Description: Image scraping functions in WordPress
@@ -7,8 +6,8 @@
  * Author: Mudassar Ali
  * License: GPL2
  */
-ini_set('display_errors',1);
-ini_set('display_startup_errors',1);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 error_reporting(-1);
 
 define('SAHIL_PLUGIN_ROOT_DIR', rtrim(plugin_dir_path(__FILE__), '/'));
@@ -185,6 +184,8 @@ function image_cron_repeat_function() {
     $cron_image_limit = get_option('cron_image_limit');
     $time_end = '';
     $execution_time = 0;
+    // get all users 
+    $users = get_active_all_user();
     foreach ($tag_array as $key => $val) {
         $pre_save[] = $val;
         $tag_cat = explode(':', $val);
@@ -213,7 +214,7 @@ function image_cron_repeat_function() {
                     }
                 }
             }
-            $post_id = add_post_using_scrap($img_array, $cat, $title, $tags);
+            $post_id = add_post_using_scrap($img_array, $cat, $title, $tags, $users);
             if ($post_id) {
                 sleep(30);
             }
@@ -234,7 +235,7 @@ function image_cron_repeat_function() {
     $execution_time = ($time_end - $time_start) / 60;
     $cron_time .= '<br/><b>Total Execution Time:</b> ' . $execution_time . ' Mins';
     $cron_time .= '<br/> Cron end at time :' . date("F j, Y, g:i a");
-    
+
     if (get_option('img_cron_run_time')) {
         update_option('img_cron_run_time', $cron_time);
     } else {
@@ -309,7 +310,6 @@ function remove_extra_slashes($str) {
 //            stripslashes($value);
 //    return $value;
 //}
-
 // hook that function onto our scheduled event:
 add_action('image_scraping_cron_job', 'image_cron_repeat_function');
 
@@ -335,16 +335,22 @@ function open_url($tag, $start) {
     return $data;
 }
 
-function add_post_using_scrap($post_data, $term, $post_title, $tags) {
+function add_post_using_scrap($post_data, $term, $post_title, $tags, $users = NULL) {
     $post_id = NULL;
+    $user_ID = 1;
+    if ($users) {
+       // $users = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+        $rand_keys = array_rand($users, 1);
+        // $user_ID =  rand(1, 20);
+        $user_ID = $users[$rand_keys];
+    }
     // if (null == get_page_by_title($post_title, OBJECT, 'post')) {
     // global $user_ID;
     $images = json_encode($post_data);
-    $user_ID = 1;
     $post_category = get_term_category($term);
     $new_post = array(
         'post_title' => $post_title,
-       // 'post_name' => $slug,
+        // 'post_name' => $slug,
         'post_content' => '',
         'post_status' => 'publish',
         'post_date' => date('Y-m-d H:i:s'),
@@ -427,7 +433,6 @@ function generate_content_html($post_data, $post_title, $post_id, $slug) {
  * @param type $desc
  * @return boolean
  */
-
 function resized_featured_image_via_url($image_url, $post_id, $post_title = "title", $desc = "img dsc") {
     $upload_dir = wp_upload_dir();
     $url = $image_url;
@@ -500,6 +505,21 @@ function get_term_category($term) {
     return isset($category->term_id) ? $category->term_id : 0;
 }
 
+function get_active_all_user() {
+    $args = array('orderby' => 'ID');
+    $users = array();
+    $wp_user_query = new WP_User_Query($args);
+    $authors = $wp_user_query->get_results();
+    if (!empty($authors)) {
+        foreach ($authors as $author) {
+            $users[] = $author->ID;
+        }
+    } else {
+        $users[] = 1;
+    }
+    return $users;
+}
+
 ////////////////////////////////////////////
 // here's the code for the actual admin page
 function imageScrapingCron() {
@@ -566,12 +586,12 @@ function imageScrapingCron() {
     <div class="wrap">
         <div id="icon-index" class="icon32"><br></div>
         <h2>Image scraping cron</h2>
-    <?php
-    // let's create jQuery UI Tabs, as demonstrated in the standalone version 
-    // or at http://jqueryui.com/tabs/#default
+        <?php
+        // let's create jQuery UI Tabs, as demonstrated in the standalone version 
+        // or at http://jqueryui.com/tabs/#default
 
-    echo '<p>Add key word to scrapp</p>';
-    ?>
+        echo '<p>Add key word to scrapp</p>';
+        ?>
 
         <div id="tabs">
             <ul>
@@ -632,7 +652,7 @@ function imageScrapingCron() {
             <div id="tabs-3">
                 <h3>Last time of cron run</h3>
                 <p>
-    <?php echo $img_cron_run_time; ?>  
+                    <?php echo $img_cron_run_time; ?>  
                 </p>
             </div>
         </div> <!-- end of tabs wrap -->
