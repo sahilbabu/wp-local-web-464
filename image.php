@@ -5,9 +5,11 @@ global $post;
 global $image_title;
 $slug_to_get = $_GET['post'];
 $post_image = $_GET['post_image'];
+$blogurl = get_bloginfo('url');
 $img = NULL;
 if (!$post && !$slug_to_get) {
-    return false;
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: $blogurl");
 }
 $args = array(
     'name' => $slug_to_get,
@@ -18,8 +20,10 @@ $args = array(
 );
 $my_posts = get_posts($args);
 if (!$my_posts) {
-    return false;
-    header("HTTP/1.1 404 Not Found");
+   //return false;
+  //  header("HTTP/1.1 404 Not Found");
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: $blogurl");
 } else {
     header("HTTP/1.1 200 OK");
     $post = $my_posts[0];
@@ -45,7 +49,6 @@ function get_key_result($obj, $key) {
 
 $post = $my_posts[0];
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$blogurl = get_bloginfo('url');
 ?>
 <?php
 get_header('image');

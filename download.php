@@ -290,15 +290,26 @@ function output_file($Source_File, $Download_Name, $file_extension = '') {
         "php" => "text/plain"
     );
 
-    if ($file_extension == '') {
+    // if ($file_extension == '') {
+    //     //  $file_extension = strtolower(substr(strrchr($Source_File,"."),1));
+    //     if (array_key_exists($file_extension, $known_mime_types)) {
+    //         $mime_type = $known_mime_types[$file_extension];
+    //     } else {
+    //         $mime_type = "application/force-download";
+    //     };
+    // };
+
+    if ($file_extension) {
         //  $file_extension = strtolower(substr(strrchr($Source_File,"."),1));
         if (array_key_exists($file_extension, $known_mime_types)) {
             $mime_type = $known_mime_types[$file_extension];
         } else {
             $mime_type = "application/force-download";
-        };
-    };
-
+        }
+    }else {
+        $mime_type = "application/force-download";
+    }
+    
     @ob_end_clean(); //off output buffering to decrease Server usage
     // if IE, otherwise Content-Disposition ignored
     if (ini_get('zlib.output_compression'))
